@@ -1,0 +1,48 @@
+{
+    "offer": [
+        {
+            "class": "right",
+            "title": "Personal",
+            "slug": "personal",
+            "text": "follow me",
+            "no": "1"
+        },
+        { 
+            "class": "left",
+            "title": "Imaginari",
+            "slug": "imaginari",
+            "text": "beyond",
+            "no": "2"
+        },
+        {
+            "class": "right",
+            "title": "First Light",
+            "slug": "first-light",
+            "text": "a state",
+            "no": "3"
+        },
+        {
+            "class": "left",
+            "title": "Human",
+            "slug": "human",
+            "text": "who is",
+            "no": "4"
+        },
+        {
+            "class": "right",
+            "title": "Night",
+            "slug": "night",
+            "text": "into the",
+            "no": "5"
+        },
+        {
+            "class": "left",
+            "title": "On Stage",
+            "slug": "on-stage",
+            "text": "a feeling",
+            "no": "6"
+        }
+
+
+    ]
+}

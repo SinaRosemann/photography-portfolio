@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "MoonTime";
+  src: url("/util/MoonTime-Regular.ttf") format("ttf"),
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #fcfcfa;
+}
+
+/* Hide scrollbar  */
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Font */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul,
+li,
+button,
+span {
+  color: #181818;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+h2 {
+  font-size: clamp(1.5rem, 1.5vw, 1.8rem);
+  margin: 10px 0;
+}
+h3 {
+  font-size: clamp(1.2rem, 2vw, 4rem);
+  font-weight: 100;
+  margin: 0px;
+  letter-spacing: 3px;
+}
+h4 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 0.9rem;
+}
+span {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+a {
+  text-decoration: none;
+}
+.font__red {
+  color: #616161;
+}
+.font__small {
+  font-size: 0.8rem;
+  letter-spacing: 6px;
+}
+.font__big {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: clamp(2.5rem, 10vw, 12rem);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+li {
+  list-style: "·";
+  margin-bottom: 20px;
+}
+.msg-alert p {
+  color: #fff !important;
+}
+
+.MuiButton-root:hover {
+  background-color: transparent !important;
+}
+@media only screen and (max-width: 1023px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  p,
+  li {
+    font-size: 1rem;
+  }
+  span {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Keyframes */
+@keyframes cta__animate {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80px;
+  }
+}
+@keyframes linkunderline {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* Button */
+button {
+  outline: 0;
+}
+
+#scroll-container {
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  background-color: #fcfcfa;
+  transition: background-color 0.7s ease-in;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
